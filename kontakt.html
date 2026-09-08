@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt | FitStart</title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/all.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-success">
+        <div class="container"><a class="navbar-brand" href="index.html"><i class="fa-solid fa-dumbbell"></i>
+                FitStart</a><a class="btn btn-outline-light btn-sm" href="index.html">Zpět na úvod</a></div>
+    </nav>
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h1 class="h2">Napište nám</h1>
+                        <p>Máte otázku k lekcím? Ozvěte se nám.</p>
+                        <form id="contactForm">
+                            <div class="mb-3"><label for="email" class="form-label">E-mailová adresa</label><input
+                                    id="email" class="form-control" type="email" placeholder="napr. jana@email.cz"
+                                    required></div>
+                            <div class="mb-3"><label for="message" class="form-label">Zpráva</label><textarea
+                                    id="message" class="form-control" rows="7" placeholder="Napište svoji zprávu..."
+                                    required></textarea></div><button class="btn btn-success" type="submit"><i
+                                    class="fa-solid fa-envelope"></i> Odeslat zprávu</button>
+                            <div id="contactMessage" class="alert alert-success mt-3 d-none">Zpráva byla odeslána.
+                                Děkujeme!</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-4 mt-5"><a class="link-light" href="dokumentace.pdf"
+            target="_blank"><i class="fa-solid fa-file-pdf"></i> Dokumentace projektu (PDF)</a></footer>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
